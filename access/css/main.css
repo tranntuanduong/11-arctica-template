@@ -632,5 +632,243 @@
 }
 
 .about {
-    height: 100px;
+    margin-top: 50px;
+}
+
+.about-item__info {
+    position: relative;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+}
+
+.about-item__info-content {
+    position: absolute;
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    background-color: rgba(254, 181, 24, 0.8);
+    text-align: center;
+    line-height: 260px;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+
+}
+
+.about-item__info:hover .about-item__info-content {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.about-item__info-content ul {
+    list-style-type: none;
+}
+
+.about-item__info-content ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.about-item__info-content ul li a i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.about-item__info-description {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -60px;
+}
+
+.about-item__info-description-name {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.about-item__info-description-position {
+    font-size:1.5rem;
+    color: var(--orange-color);
+    font-weight: 600;
+}
+
+/* Footer  */
+.footer {
+    margin-top: 150px;
+}
+
+.footer__bottom {
+    background-color: #111;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.footer-content {
+    padding: 60px 0;
+    background-color: #151515;
+}
+
+
+.footer-content__item-img {
+    margin-right: 10px;
+}
+
+.footer-content__item-img img {
+    display: block;
+}
+
+.footer-content__item-wrap {
+    padding: 5px;
+}
+
+.footer-content__item-text {
+    font-size: 1.5rem;
+    color: #888888;
+    margin-top: 20px;
+    line-height: 1.5;
+    align-items: justify;
+}
+
+.footer-content__item-contract {
+    display: flex;
+    color: #888888;
+    margin-top: 20px;
+    font-size: 1.4rem
+}
+
+.footer-content__item-contract-text {
+    width: 200px;
+    line-height: 1.5;
+}
+
+
+.footer-content__item-contract-icon {
+    width: 30px;
+}
+
+.footer-content__item-contract i {
+    font-size: 20px;
+}
+
+.footer-content__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin-bottom: 48px
+}
+
+.footer-content__title-underline {
+    width: 30px;
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid var(--orange-color);
+}
+
+.footer-content__body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.footer-content__body-item {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding : 8px 0;
+    color: #888888;
+}
+
+.footer-content__body-item:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-content__body-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content__body-row + .footer-content__body-row  {
+    margin-top: 15px;
+}
+
+.footer-content__body-img {
+    position: relative;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #5c5c5c;
+}
+
+.footer-content__body-img img {
+    width:64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.footer-content__body-img-link {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    width:70px;
+    height: 70px;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(254, 181, 24, 0.3);
+    opacity: 0;
+}
+
+.footer-content__body-row:hover .footer-content__body-img-link {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.footer-content__body-img-link i {
+    font-size: 15px;
+}
+
+.footer-content__body-text {
+    margin-left: 15px;
+}
+
+.footer-content__body-text-title {
+    color: #cccccc;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.footer-content__body-text-date {
+    color: #888888;
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+
+.footer-content__body-wrap {
+    display: flex;
+}
+
+.footer-content__body-dot {
+    flex: 1;
+    border-bottom: 1px dashed #888888;
+    margin: 0 10px 10px 10px;
+}
+
+.scroll {
+    height: 1000px;
 }

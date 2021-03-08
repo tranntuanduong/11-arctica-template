@@ -43,6 +43,10 @@ html {
     padding-right: 8px;
 }
 
+.grid__col-2-12 {
+    width: 16.66667%;
+}
+
 .grid__col-3-12 {
     width: 25%;
 }
@@ -61,6 +65,10 @@ html {
 
 .ml-15 {
     margin-left: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .h300 {
