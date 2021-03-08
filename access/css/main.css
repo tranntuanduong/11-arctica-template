@@ -154,6 +154,10 @@
 
 /* Posts  */
 /* post advertise  */
+.advertise {
+    padding: 10px 0;
+}
+
 .post-advertise {
     margin-top: 50px;
     height: 450px;

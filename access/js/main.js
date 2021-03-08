@@ -1,6 +1,6 @@
 $(function(){
-    filterItems = $('.grid__row').isotope({
-        itemSelector: '.grid__col',
+    filterItems = $('.iso-list').isotope({
+        itemSelector: '.iso-item',
         layoutMode: 'fitRows'
     })
 
