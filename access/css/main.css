@@ -1,7 +1,9 @@
+
+
 /* Header  */
 
 .header {
-   
+    border-bottom: 1px dotted #ccc;
 }
 .header__top {
     height: 40px;
@@ -45,14 +47,16 @@
     font-size: 1.4rem;
     text-decoration: none;
     color: var( --text-grey-color);
+    font-weight: 600;
 }
 
 .header__menu-item a:hover {
-    color: rgba(0,0,0,.7);
+    color: var(--orange-color);
 }
 
 .header__menu-item--active a {
-    color: var( --text-color);
+    color: var(--orange-color);
+
 }
 
 .btn-primary a {
@@ -160,8 +164,7 @@
 
 .post-advertise {
     margin-top: 50px;
-    height: 450px;
-  
+    /* height: 450px; */
 }
 
 .post-advertise__content {
@@ -205,12 +208,21 @@
     text-align: justify;
 }
 
+.post-advertise__content-description .sub-title {
+    font-size: 1.8rem;
+    margin-top: 20px
+}
+
 .post-advertise__img {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .post-advertise__img img {
-    height: 100%;
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 /* Our service */
@@ -286,12 +298,12 @@
 
 /* Menus  */ 
 .menus {
-   
-}
+   margin-top: 60px;
+ 
+}   
 
 .slogan {
     background-color: #3e3e3e;
-    margin-top: 60px;
     height: 720px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -299,6 +311,45 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.slogan--white-bg {
+    background-color: #fff;
+}
+
+.slogan--white-bg .slogan-text {
+    color: var(--text-color);
+    font-size: 2.6rem;
+}
+
+.suv-slogan-text {
+    color: #777777;
+    font-size: 1.7rem;
+    margin-top: 22px;
+    text-align: center;
+    padding: 0 200px;
+    line-height: 1.6;
+}
+
+.orange-color {
+    color: var(--orange-color);
+}
+
+.slogan-phone-number {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 35px;
+    font-weight: 600;
+}
+
+.slogan--white-bg .font-dancing {
+    color: var(--orange-color);
+    font-size: 3.2rem;
+
+}
+
+.slogan .font-dancing {
+    text-shadow: 0 0 10px #feb51879;
 }
 
 .slogan-text {
@@ -405,7 +456,6 @@
 /* Promotes  */
 .promotes {
     margin-top: 50px;
-    min-height:380px;
 }
 
 .promote-item {
@@ -873,6 +923,185 @@
     margin: 0 10px 10px 10px;
 }
 
-.scroll {
-    height: 1000px;
+/* About page  */
+
+/* Chef info  */
+.chef-info {
+    margin-top: 80px;
+    background-image: url('./../img/chef-info-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+
+.chef-info__content {
+    padding: 40px 100px 0 100px;
+
+}
+
+.chef-info__img img {
+    width: 100%;
+}
+
+.chef-info__content-social {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.chef-info__content-social li {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #333;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.chef-info__content-social li:first-child {
+    margin-left: 0px;
+}
+
+.chef-info__content-social li a {
+    font-size: 15px;
+    color: #fff;
+    line-height: 30px;
+}
+
+/* Contract advertise  */
+.contract-advertise {
+    background-color: #3e3e3e;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contract-advertise__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.contract-advertise__content-text {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0px 0px 2px #fff;
+}
+
+.contract-advertise__content-btn {
+    width: 180px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Reservation page  */
+.book-table {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.book-table__input-list {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.book-table__input-wrap {
+    height: 42px;
+    width: 275px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    padding: 0 10px;
+    
+}
+
+.book-table__input-wrap i {
+    color: rgb(80, 80, 80);
+    font-size: 25px;
+}
+
+.book-table__input-wrap input {
+    border: none;
+    float: left;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    color: rgb(80, 80, 80);
+}
+
+.book-table__input-wrap input:focus .book-table__input-wrap{
+    /* Chua xu ly duoc cho nay */
+}
+
+.book-table__input-wrap input[type="date"] {
+    width: 100%;
+    color: rgb(131, 131, 131);
+}
+
+.book-table .post-advertise__content-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 15px 20px;
+}
+
+/* Contract page  */
+.form-contract__title {
+    padding-top: 60px;
+}
+
+.form-contract__title .slogan-text {
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+.form-contract__title .font-dancing {
+    color: var(--orange-color);
+    font-size: 32px;
+}
+
+.form-contract__input {
+    padding-bottom: 40px;
+}
+
+.form-contract__input input {
+    padding: 10px 5px;
+    width: 100%;
+    margin-top: 20px; 
+    outline: none;
+    color: rgb(51, 51, 51);
+}
+
+.form-contract__input textarea {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    margin-top: 20px;
+    height: 170px;
+    outline: none;
+    color: rgb(51, 51, 51);
+}
+
+.form-contract__input-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
 }

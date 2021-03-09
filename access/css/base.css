@@ -19,6 +19,13 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.separate-dot {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-bottom: 3px dotted #ccc;
+}
+
 .font-dancing {
     font-family: 'Dancing Script', cursive;
     color: var(--primary-color);
@@ -63,12 +70,49 @@ html {
     width: 66.66667%;
 }
 
+.grid__col-12-12 {
+    width: 100%;
+}
+
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+
+}
+
+.mt-60 {
+    margin-top: 60px;
+
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+
 .ml-15 {
     margin-left: 15px;
 }
 
-.mt-10 {
-    margin-top: 10px;
+.mbt-50 {
+    margin-bottom: 50px;
+}
+
+.pdl-0 {
+    padding-left: 0;
 }
 
 .h300 {
