@@ -88,6 +88,10 @@ html {
     margin-top: 10px;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
 .mt-40 {
     margin-top: 40px;
 
@@ -109,6 +113,12 @@ html {
 .ml-15 {
     margin-left: 15px;
 }
+
+.mbt-20 {
+    margin-bottom: 20px;
+
+}
+
 
 .mbt-50 {
     margin-bottom: 50px;

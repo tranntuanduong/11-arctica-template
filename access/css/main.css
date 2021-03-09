@@ -190,6 +190,8 @@
     color: var(--sub-btn-color);
     font-weight: 600;
     margin-top: 30px;
+    display: block;
+    text-decoration: none;
 }
 
 .post-advertise__content-btn:hover {
@@ -332,6 +334,7 @@
 }
 
 .orange-color {
+    margin: 0 2px;
     color: var(--orange-color);
 }
 
@@ -1261,4 +1264,210 @@
 
 .top-rate-item:hover .top-rate-item__img {
     opacity: 0.7;
+}
+
+/* Blog detail  */
+.blog-detail {
+    padding: 0 20px;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.haft-width {
+    width: 50%;
+    padding: 2px;;
+}
+
+.blog-detail__img-wrap {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;;
+}
+
+.blog-detail__content h5 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin: 20px 0 20px 0;
+}
+
+.blog-detail p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    line-height: 1.6;
+    align-items: justify;
+}
+
+.blog-detail__list-element {
+    list-style-type: none;
+}
+
+.blog-detail__list-element li {
+    position: relative;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 22px;
+    margin-left: 15px;
+}
+
+.blog-detail__list-element li::after {
+    position: absolute;
+    left: -14px;
+    top: 5px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--orange-color);
+}
+
+.blog-detail__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-detail__strong {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.blog-detail__tag-link {
+    color: var(--orange-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.blog-detail__tag-link:hover {
+    text-decoration: underline;
+}
+
+.blog-detail__footer-right {
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.blog-detail__comment {
+    margin-top: 40px;
+}
+
+.blog-detail__comment-title {
+    font-size: 1.8rem;color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.blog-detail__comment-item {
+    display: flex;
+    align-items: center;
+}
+
+.blog-detail__comment-item + .blog-detail__comment-item {
+    margin-top: 30px;
+}
+
+.blog-detail__comment .comment-item__img img {
+    width: 102px;
+    height:102px;
+    border-radius: 50%;
+}
+
+.blog-detail__comment .comment-item__content {
+    margin-left: 20px;
+    padding-bottom: 30px;;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrap-flex {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.blog-detail__comment .comment-item__content-name {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.date-and-reply {
+    font-size: 1.4rem;
+    display: flex;
+    color: var(--text-color);
+  
+}
+
+.date-and-reply__date {
+    margin-right: 10px;
+    color: var(--text-grey-color);
+}
+
+.date-and-reply__reply {
+    font-weight: 600;
+}
+
+.date-and-reply__reply:hover {
+    color: var(--orange-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.date-and-reply__reply i {
+    margin-left: 5px;
+}
+
+.blog-detail__comment .comment-item__content-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--text-grey-color);
+}
+
+/* blog comment */
+.blog-detail__send-comment {
+    margin-top: 40px;
+}
+
+.send-comment__input {
+    margin-bottom: 10px;;
+}
+
+.blog-detail__send-comment .send-comment__input-name {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 4px 0;
+}
+
+
+.blog-detail__send-comment .send-comment__input-element {
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.blog-detail__send-comment .send-comment__input-element:focus,
+.blog-detail__send-comment .send-comment__input-element--textarea:focus {
+    border-color: var(--orange-color);
+}
+
+.blog-detail__send-comment .send-comment__input-element--textarea {
+    height: 110px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.blog-detail__send-comment .send-comment__input-btn {
+    padding: 10px;
+    background-color: var(--orange-color);
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 30px;
 }
