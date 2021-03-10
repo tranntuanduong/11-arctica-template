@@ -1222,6 +1222,10 @@
     color: var(--orange-color);
 }
 
+.top-rate {
+    padding-top: 10px;
+}
+
 .top-rate-item {
     list-style-type: none;
 }
@@ -1561,4 +1565,112 @@
     background-color: #fff;
     border-color: var(--orange-color);
     color: var(--text-color);
+}
+
+.shop-page__sort {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    color: var(--text-color);
+    align-items: center;
+}
+
+.shop-page__sort-type-wrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.shop-page__sort-type-text {
+    min-width: 180px;
+}
+
+.shop-page__sort-type-wrap i {
+    font-size: 17px;
+}
+
+.shop-products__item {
+    margin-top: 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.shop-products__item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-products__item-img img {
+    width: 100%; 
+    display: block;
+}
+
+.shop-products__item-content .item-content__title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.shop-products__item-content .item-content__description {
+    margin-top: 10px;
+    color: var(--text-grey-color);
+    font-size: 1.4rem;
+}
+
+.shop-products__item-content .item-content__rating {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: var(--text-grey-color);
+}
+
+.shop-products__item-content .item-content__rating .has-rating {
+    color: var(--orange-color);
+}
+
+.shop-products__item--new {
+    position: relative;
+}
+
+.shop-products__item--new::after {
+    position: absolute;
+    content: "New";
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    border-radius: 2px;
+    background-color: var(--orange-color);
+    text-align: center;
+    top: 5px;
+    left: 6px;
+}
+
+.shop-products__item-btn {
+    position: absolute;
+    padding: 10px 5px;
+    display: flex;
+    width: 120px;
+    justify-content: center;
+    background-color: var(--orange-color);
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    bottom: 6px;
+    right: 3px;
+    transform: translateY(calc(100% + 6px));
+    transition: 0.3s;
+}
+
+.shop-products__item:hover .shop-products__item-btn {
+    transform: translateY(0);
+}
+
+.shop-products__item-btn-icon {
+    margin-right: 5px;
 }
