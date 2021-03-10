@@ -12,6 +12,4 @@ $(function(){
         filterItems.isotope({ filter:  data })
         return false ;      
     });
-
-   
 })  

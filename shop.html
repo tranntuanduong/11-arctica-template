@@ -44,9 +44,7 @@
                             <li class="header__menu-item"><a href="./gallery.html">Gallery</a></li>
                             <li class="header__menu-item"><a href="./blog.html">Blog</a></li>
                             <li class="header__menu-item header__menu-item--active"><a href="./shop.html">Shop</a></li>
-                            <li class="header__menu-item "><a href="./contract.html">Contract</a></li>
-                           
-
+                            <li class="header__menu-item "><a href="./contract.html">Contract</a></li>            
                             <li class="header__menu-item btn-primary"><a href="./reservation.html">Reservation</a></li>
                         </ul>
                     </div>
@@ -54,15 +52,53 @@
                 
             </div>
             <div class="container">
-                <div class="slogan  mt0" style="background-image: url('./access/img/slogan-1.jpg')">
+                <div class="slogan h500 mt0" style="background-image: url('./access/img/slogan-1.jpg')">
                     <h4 class="slogan-text font-dancing">Shop Page</h4>
-                    <h4 class="slogan-text ">Shop page comming soon</h4>
+                    <h4 class="slogan-text ">Shop Products</h4>
                 </div>
-            </div>
 
-           
-   
-            
+                <div class="shop-page">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__col grid__col-3-12">
+                                <div class="shop-sidebar">
+                                    <div class="form-search">
+                                        <input type="search" name="search-field" value="" placeholder="Search Here">
+                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="categories">
+                                        <span class="side-bar-title-session">Categories</span>
+                                        <ul class="categories-list">
+                                            <li class="categories-item"><a href="./blog.html">Healthy Food</a></li>
+                                            <li class="categories-item"><a href="./blog.html">Super Burger</a></li>
+                                            <li class="categories-item"><a href="./blog.html">Home Special</a></li>
+                                            <li class="categories-item"><a href="./blog.html">Residential</a></li>
+                                            <li class="categories-item"><a href="./blog.html">Desserts</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-filter">
+                                        <span class="side-bar-title-session">Price Filter</span>
+                                        <div class="prire-filter__bar">
+                                            <input id="input-left" type="range" min="0" max="100" value="17">
+                                            <input id="input-right" type="range" min="0" max="100"  value="55">
+
+                                            <div class="prire-filter__bar-handle-lower x" style="--percent: 20%"></div>
+                                            <div class="prire-filter__bar-handle-range" style="--percent-range: 40%"></div>
+                                            <div class="prire-filter__bar-handle-higher x" style="--percent: 60%"></div>
+                                            </div> 
+                                        
+                                        <div class="price-filter__bottom">
+                                            <div class="price-filter__bottom-btn">Filter</div>
+                                            <div class="price-filter__bottom-prire-range">$103.33 - $318.33</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
 
             <div class="footer">
                 <div class="footer-content">
@@ -202,6 +238,57 @@
         <script src="./access/js/main.js"></script>
         <script src="./access/js/isotope.pkgd.min.js"></script>
     
-        
+        <script>
+            var inputLeft = document.querySelector('#input-left');
+            var inputRight = document.querySelector('#input-right');
+
+            var thumbLeft = document.querySelector('.prire-filter__bar-handle-lower');
+            var thumbRight = document.querySelector('.prire-filter__bar-handle-higher');
+            var range = document.querySelector('.prire-filter__bar-handle-range');
+
+            //default range
+            thumbRight.style.left = `${inputRight.value}%`;
+            thumbLeft.style.left = `${inputLeft.value}% `;
+
+            var rangeWidth = `${(inputRight.value - inputLeft.value)}`;
+            range.style.width = `calc(${rangeWidth}%)`;   
+            midPoint = inputLeft.value;
+            range.style.left = `${midPoint}%`;
+            console.log(midPoint);
+            function setLeftValue () {
+                var _this = inputLeft;
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
+                _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value));
+                thumbLeft.style.left = `${_this.value}%`;
+
+                var rangeWidth = `${(inputRight.value - inputLeft.value)}`;
+                range.style.width = `${rangeWidth}%`;   
+                midPoint = inputLeft.value;
+                range.style.left = `${midPoint}%`;
+
+                console.log(rangeWidth);
+            }
+            
+            function setRightValue () {
+                var _this = inputRight;
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
+                _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value));
+                thumbRight.style.left = `${_this.value}%`;
+
+                var rangeWidth = `${(_this.value - inputLeft.value)}`;
+                range.style.width = `${rangeWidth}%`;   
+                midPoint = inputLeft.value;
+                range.style.left = `${midPoint}%`;
+
+                console.log(rangeWidth);
+            }
+
+            inputLeft.addEventListener("input", setLeftValue);
+            inputRight.addEventListener("input", setRightValue);
+
+            // `calc(${_this.value}'%' - 8px)`;
+        </script>
     </body>
 </html>

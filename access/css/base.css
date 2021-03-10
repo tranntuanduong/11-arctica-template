@@ -140,6 +140,10 @@ html {
     height:400px;
 }
 
+.h500 {
+    height:500px;
+}
+
 .btn-primary {
     padding: 10px 16px;
     background-color: var(--primary-color);
