@@ -17,6 +17,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .separate-dot {
@@ -62,8 +63,16 @@ html {
     width: 33.33333%;
 }
 
+.grid__col-5-12 {
+    width: 41.66667%;
+}
+
 .grid__col-6-12 {
     width: 50%;
+}
+
+.grid__col-7-12 {
+    width: 57.33333%;
 }
 
 .grid__col-8-12 {
@@ -94,7 +103,6 @@ html {
 
 .mt-40 {
     margin-top: 40px;
-
 }
 
 .mt-60 {
@@ -126,6 +134,10 @@ html {
 
 .pdl-0 {
     padding-left: 0;
+}
+
+.pd-0 {
+    padding: 0;
 }
 
 .h200 {
